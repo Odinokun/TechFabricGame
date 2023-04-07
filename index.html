@@ -23,25 +23,41 @@
 </head>
 
 <body>
-<main>
+<div class="wrap" style="background-image: url('assets/img/bg-lvl/bg-lvl-01.jpg')">
   <!-- begin header -->
   <header class="header">
-    <div class="container">
-      <div class="header__item level">
-        <span>Level: </span>
-        <span>4</span>
-      </div>
+    <div class="header__item level">
+      <span>Level: </span>
+      <span>1</span>
+    </div>
 
-      <div class="header__item user">
-        <span class="user__name">Odinokun</span>
-        <span class="user__ava">
-          <img src="assets/img/ava.jpg" alt="user avatar">
-        </span>
+    <div class="header__item user">
+      <span class="user__name">Odinokun</span>
+      <div class="user__ava">
+        <img src="assets/img/ava.jpg" alt="user avatar">
       </div>
     </div>
   </header>
   <!-- end   header -->
-</main>
+
+  <!-- begin main -->
+  <main class="main">
+    <div class="ship">
+      <img src="assets/img/ships/ship-01.png" alt="spaceship">
+    </div>
+  </main>
+  <!-- end   main -->
+
+  <!-- begin footer -->
+  <div class="footer">
+    <div class="damage">0</div>
+    <div class="weapon">
+      <button class="weapon__btn">fire</button>
+    </div>
+  </div>
+  <!-- end   footer -->
+
+</div>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

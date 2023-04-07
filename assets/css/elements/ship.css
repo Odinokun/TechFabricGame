@@ -1,0 +1,9 @@
+.ship {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.ship img {
+  display: block;
+  width: 100%;
+}
