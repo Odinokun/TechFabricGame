@@ -20,6 +20,7 @@
   width: 70px;
   height: 70px;
   cursor: pointer;
+  user-select: none;
   transition: color .3s, background-color .3s, border-color .15s;
   text-align: center;
   text-transform: uppercase;

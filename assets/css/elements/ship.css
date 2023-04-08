@@ -6,4 +6,5 @@
 .ship img {
   display: block;
   width: 100%;
+  max-height: calc(100vh - 230px);
 }
