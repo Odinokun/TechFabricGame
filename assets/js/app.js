@@ -1,12 +1,14 @@
-let damage = 0;
-const damageCounter = document.getElementById('damage');
+window.level = 1;
+window.damage = 0;
+
+import {AddDamage} from './modules/damageCounter.js';
+import {ChangeLevel} from './modules/levelCounter.js';
+
 const damageBtn = document.getElementById('damage-btn');
 
-const AddDamage = (num) => {
-  damage = ++num;
-  if (damageCounter) {
-    damageCounter.innerHTML = damage;
-  }
-};
+const BtnHandler = () => {
+  AddDamage();
+  ChangeLevel();
+}
 
-damageBtn && damageBtn.addEventListener('click', () => AddDamage(damage));
+damageBtn?.addEventListener('click', BtnHandler);
