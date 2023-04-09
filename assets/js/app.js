@@ -12,3 +12,15 @@ const BtnHandler = () => {
 }
 
 damageBtn?.addEventListener('click', BtnHandler);
+
+
+const inputsList = document.querySelectorAll('input');
+inputsList.forEach(input => {
+  input.addEventListener('input', () => {
+    if (input.value !== '') {
+      input.classList.add('isActive');
+    } else {
+      input.classList.remove('isActive');
+    }
+  });
+});
