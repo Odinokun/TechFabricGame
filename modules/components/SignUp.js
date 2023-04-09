@@ -7,6 +7,7 @@ export const SignUp = () => {
     <form class="sign-up__form">
       <label class="sign-up__label label">
         <input class="sign-up__input input"
+               id="name-input"
                type="text"
                name="name"
                required>
@@ -14,6 +15,7 @@ export const SignUp = () => {
       </label>
       <label class="sign-up__label label">
         <input class="sign-up__input input"
+               id="email-input"
                type="email"
                name="email"
                required>
