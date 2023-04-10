@@ -1,0 +1,16 @@
+.btn {
+  font-size: 24px;
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: opacity .2s;
+  text-align: center;
+  opacity: .8;
+  color: var(--main-bg-color);
+  border: 2px solid var(--main-text-color);
+  border-radius: 4px;
+  background-color: var(--main-text-color);
+}
+
+.btn:hover {
+  opacity: 1;
+}
