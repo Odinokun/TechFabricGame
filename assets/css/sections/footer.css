@@ -9,6 +9,7 @@
 
 .damage {
   font-size: 64px;
+  user-select: none;
   color: var(--highlight-color);
 }
 
