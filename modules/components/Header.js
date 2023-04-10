@@ -2,7 +2,7 @@ export const Header = (name) => {
   const main = document.getElementById('main');
 
   main.insertAdjacentHTML('beforebegin', `
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__item level">
         <span>Level: </span>
         <span id="level-count">1</span>
