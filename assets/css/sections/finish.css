@@ -1,0 +1,94 @@
+.finish {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: perspective(400px) rotateX(20deg);
+  transform-origin: 50% 100%;
+  background-color: var(--main-bg-color);
+}
+
+.finish__logo {
+  position: relative;
+  z-index: 2;
+  padding: 80px 10px 400px 0;
+  user-select: none;
+  /*z-index: 111;*/
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%);
+}
+
+.finish__logo img {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.finish__title,
+.finish__subtitle {
+  font-size: 64px;
+  position: relative;
+  margin-bottom: 20px;
+  user-select: none;
+  text-align: center;
+}
+
+.finish__text-wrap {
+  font-size: 30px;
+  position: absolute;
+  top: -3000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+  user-select: none;
+  text-align: center;
+}
+
+
+.finish__text {
+  padding-top: 4000px;
+  animation: autoscroll 1000s linear;
+}
+
+@keyframes autoscroll {
+  to {
+    margin-top: -50000px;
+  }
+}
+
+.audio {
+  position: fixed;
+  z-index: 3;
+  left: 30px;
+  bottom: 30px;
+}
+
+.audio__btn {
+  padding: 15px;
+  cursor: pointer;
+  transition: border-color .3s;
+  border: 2px solid var(--main-text-color);
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.audio__btn svg {
+  display: block;
+  fill: var(--main-text-color);
+  width: 20px;
+  height: 20px;
+  transition: fill .3s;
+}
+
+.audio__btn.isActive {
+  border-color: var(--highlight-color);
+}
+
+.audio__btn.isActive svg {
+  fill: var(--highlight-color);
+}
