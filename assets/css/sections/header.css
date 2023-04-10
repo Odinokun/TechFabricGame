@@ -18,6 +18,7 @@
 
 .level {
   font-size: 24px;
+  user-select: none;
 }
 
 .level span {
