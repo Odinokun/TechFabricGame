@@ -14,7 +14,7 @@ a {
 }
 
 ::selection {
-  color: var(--main-bg-color);
-  background-color: var(--main-text-color);
+  color: var(--dark-color);
+  background-color: var(--brand-color);
   text-shadow: none;
 }
