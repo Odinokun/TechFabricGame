@@ -3,13 +3,13 @@ import { state } from '../../state/state.js';
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const ValidateForm = (name, email) => {
-  if (!name && name.value.trim() === '') {
+  if (!name || name.value.trim() === '') {
     name.classList.add('error');
     return false
   }
 
-  if (!email && !emailRegex.test(email.value)) {
-    name.classList.add('error');
+  if (!email || !emailRegex.test(email.value)) {
+    email.classList.add('error');
     return false;
   }
 
