@@ -1,17 +1,21 @@
-import {state} from '../../state/state.js';
+import { state } from '../../state/state.js';
 
-export const validateForm = (name, email) => {
-  if (name.value.length > 0) {
-    state.username = name.value;
-  } else {
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+export const ValidateForm = (name, email) => {
+  if (!name && name.value.trim() === '') {
+    name.classList.add('error');
+    return false
+  }
+
+  if (!email && !emailRegex.test(email.value)) {
     name.classList.add('error');
     return false;
   }
-  if (email.value.length > 0 && email.value.includes('@')) {
-    state.email = email.value;
-  } else {
-    email.classList.add('error');
-    return false;
-  }
+
+  state.username = name.value;
+  state.email = email.value;
+
   return true;
+
 };

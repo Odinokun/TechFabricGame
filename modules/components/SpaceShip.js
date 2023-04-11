@@ -1,9 +1,10 @@
-export const SpaceShip = (img) => {
-  const main = document.getElementById('main');
+import { refs } from '../../helpers/refs.js';
 
-  main.insertAdjacentHTML('afterbegin', `
+export const SpaceShip = (img) => {
+  refs.main.insertAdjacentHTML('afterbegin', `
     <div class="ship">
       <img id="ship-img" src=${img} alt="alien spaceship">
     </div>
   `);
+  refs.starshipImg = document.getElementById('ship-img');
 }

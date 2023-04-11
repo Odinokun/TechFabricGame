@@ -1,6 +1,7 @@
 :root {
-  --main-bg-color: #000;
-  --main-text-color: #feda4a;
+  --doc-height: 100%;
+  --dark-color: #000;
+  --brand-color: #feda4a;
   --highlight-color: #cb2305;
 }
 
@@ -8,15 +9,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html,
+body {
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 }
 
 html {
   line-height: 1.38;
   font-size: 16px;
   font-family: 'Pathway Gothic One', sans-serif;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  -webkit-text-size-adjust: 100%;
+  background-color: var(--dark-color);
+  color: var(--brand-color);
 }
 
 body {

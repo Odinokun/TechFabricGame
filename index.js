@@ -1,9 +1,14 @@
-import {SignUp} from './modules/components/SignUp.js';
-import {InputsPlaceholder} from './modules/actions/inputsPlaceholder.js';
-import {StartGame} from './modules/actions/startGame.js';
+import { refs } from './helpers/refs.js';
+import { OnScreenHeight } from './modules/actions/onScreenHeight.js';
+import { SignUp } from './modules/components/SignUp.js';
+import { InputsPlaceholder } from './modules/actions/inputsPlaceholder.js';
+import { StartGame } from './modules/actions/startGame.js';
 
+OnScreenHeight();
 SignUp();
 InputsPlaceholder();
 
-const signUpBtn = document.getElementById('sign-up-btn');
-signUpBtn?.addEventListener('click', StartGame);
+refs.signUpBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  StartGame();
+});

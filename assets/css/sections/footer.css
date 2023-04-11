@@ -8,9 +8,21 @@
 }
 
 .damage {
-  font-size: 64px;
+  font-size: 40px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
   user-select: none;
   color: var(--highlight-color);
+  border: 3px solid var(--highlight-color);
+  border-radius: 50%;
+}
+
+.weapon {
+  user-select: none;
 }
 
 .weapon__btn {
@@ -18,23 +30,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   user-select: none;
   transition: color .3s, background-color .3s, border-color .15s;
   text-align: center;
   text-transform: uppercase;
-  color: var(--main-text-color);
-  border: 3px solid var(--main-text-color);
+  color: var(--brand-color);
+  border: 3px solid var(--brand-color);
   border-radius: 50%;
   background-color: transparent;
   box-shadow: none;
+
+  touch-action: none;
 }
 
 .weapon__btn:hover {
   color: var(--highlight-color);
-  background-color: var(--main-text-color);
+  background-color: var(--brand-color);
 }
 
 .weapon__btn:active {
