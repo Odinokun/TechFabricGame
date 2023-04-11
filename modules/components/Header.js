@@ -1,7 +1,7 @@
-export const Header = (name) => {
-  const main = document.getElementById('main');
+import { refs } from '../../helpers/refs.js';
 
-  main.insertAdjacentHTML('beforebegin', `
+export const Header = (name) => {
+  refs.main.insertAdjacentHTML('beforebegin', `
     <header id="header" class="header">
       <div class="header__item level">
         <span>Level: </span>
@@ -16,4 +16,6 @@ export const Header = (name) => {
       </div>
     </header>
   `);
+  refs.levelCounter = document.getElementById('level-count');
 }
+

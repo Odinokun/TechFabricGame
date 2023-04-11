@@ -1,6 +1,6 @@
 export const state = {
-  username: 'Odinokun',
-  email: 'odinokun@gmail.com',
+  username: '',
+  email: '',
   damage: 0,
   level: 1,
   levels: [
@@ -30,5 +30,4 @@ export const state = {
       shipImgUrl: "assets/img/ships/ship-05.png"
     },
   ]
-
 }

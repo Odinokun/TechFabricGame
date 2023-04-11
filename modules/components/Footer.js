@@ -1,7 +1,7 @@
-export const Footer = (damage) => {
-  const main = document.getElementById('main');
+import { refs } from '../../helpers/refs.js';
 
-  main.insertAdjacentHTML('afterend', `
+export const Footer = (damage) => {
+  refs.main.insertAdjacentHTML('afterend', `
     <div id="footer" class="footer">
       <div id="damage" class="damage">${damage}</div>
       <div class="weapon">
@@ -9,5 +9,6 @@ export const Footer = (damage) => {
       </div>
     </div>
   `);
+  refs.damageCounter = document.getElementById('damage');
+  refs.damageBtn = document.getElementById('damage-btn');
 }
-

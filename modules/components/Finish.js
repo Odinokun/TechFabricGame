@@ -1,6 +1,7 @@
-export const Finish = () => {
+import { refs } from '../../helpers/refs.js';
 
-  document.body.insertAdjacentHTML('beforeend',`
+export const Finish = () => {
+  document.body.insertAdjacentHTML('beforeend', `
     <div class="finish-wrap">
       <div class="finish__logo">
         <img src="assets/img/logo.png" alt="TechFabric School Logo">
@@ -337,4 +338,6 @@ export const Finish = () => {
       </div>
     </div>
   `);
+  refs.audioBtn = document.getElementById('audio-btn');
+  refs.audio = document.getElementById('audio');
 }
