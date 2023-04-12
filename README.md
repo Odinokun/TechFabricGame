@@ -2,21 +2,40 @@
 
 # 🚀🚀 Space shooter =)
 
-## 👨🏻‍💻 Author 
-[@odinokun](https://github.com/Odinokun)
-
 ## 🔗 Link to the game 🚀
 [Play me =)](http://techfabric.odinokun.com/)
 
-## 🛠 Tech Stack
+### 🛠 Tech Stack
 Javascript, HTML, CSS
 
-## Screenshots
+### 👨🏻‍💻 Author 
+[@odinokun](https://github.com/Odinokun)
+
+## Run Locally
+Clone the project
+```bash
+  git clone https://github.com/Odinokun/TechFabricGame.git
+```
+Go to the project directory
+```bash
+  cd TechFabricGame
+```
+If you have Node.js installed, you can use the http-server package to start a local server. 
+```bash
+  npm install -g http-server
+```
+Once the package is installed, navigate to the directory containing your index.html file and run the following command
+```bash
+  http-server
+```
+This will start a server on port 8080 (by default) and you can access index.html file by going to http://localhost:8080 in your web browser.
+
+### Screenshots
 ![App Screenshot](https://raw.githubusercontent.com/Odinokun/TechFabricGame/main/assets/img/screenshots/screen-01.jpg)
 ![App Screenshot](https://raw.githubusercontent.com/Odinokun/TechFabricGame/main/assets/img/screenshots/screen-02.jpg)
 ![App Screenshot](https://raw.githubusercontent.com/Odinokun/TechFabricGame/main/assets/img/screenshots/screen-03.jpg)
 
-## Project structure
+### Project structure
 ```
 📦 
 ├─ .gitignore
@@ -86,16 +105,6 @@ Javascript, HTML, CSS
 └─ state
    └─ state.js
 ```
-## Run Locally
-Clone the project
-```bash
-  git clone https://github.com/Odinokun/TechFabricGame.git
-```
-Go to the project directory
-```bash
-  cd TechFabricGame
-```
-Start local server and open index.html
 
-### 💬 ⚡️ This is a test task.
+#### 💬 ⚡️ This is a test task.
 Does not carry a commercial purpose.
