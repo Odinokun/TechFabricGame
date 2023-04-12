@@ -279,10 +279,10 @@ export const Finish = () => {
         </div>
       </div>
       <div class="audio">
-        <audio id="audio">
+        <audio id="audio" autoplay>
           <source src="http://soundfxcenter.com/movies/star-wars/8d82b5_Star_Wars_Main_Theme_Song.mp3" type="audio/mpeg">
         </audio>
-        <button id="audio-btn" class="audio__btn">
+        <button id="audio-btn" class="audio__btn isActive">
           <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 522.234 522.234">
             <path d="M346.35,41.163c-10.855-10.367-25.076-16.078-40.045-16.078c-10.832,0-21.445,3.063-30.689,8.857l-159.161,99.761H58.354
             c-31.9,0-57.854,25.952-57.854,57.853v138.918c0,31.9,25.953,57.854,57.854,57.854h57.773l159.487,99.965
