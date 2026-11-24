@@ -1,9 +1,10 @@
-﻿![Logo](https://raw.githubusercontent.com/Odinokun/TechFabricGame/main/assets/img/screenshots/logo.png)
+![Logo](https://raw.githubusercontent.com/Odinokun/TechFabricGame/main/assets/img/screenshots/logo.png)
 
-# 🚀🚀 Space shooter =)
+# Space shooter
 
-## 🔗 Link to the game 🚀
-[Play me =)](http://techfabric.odinokun.com/)
+Browser game in vanilla JavaScript, HTML and CSS: five levels, sign-up form, sound.
+
+**Play:** https://odinokun.github.io/TechFabricGame/
 
 ### 🛠 Tech Stack
 Javascript, HTML, CSS
